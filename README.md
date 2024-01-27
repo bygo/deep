@@ -3,7 +3,7 @@
 ## Copy
 
 ```go
-import github.com/bygo/deep
+import "github.com/bygo/deep"
 
 var usersCopy = deep.Copy(users)
 
@@ -14,7 +14,7 @@ var usersCopy = deep.Copy(users)
 Some structures will be ignored
 
 ```go
-import github.com/bygo/deep
+import "github.com/bygo/deep"
 
 var usersCopy = deep.CopyIgnore(users, User{}, Article{})
 ```
