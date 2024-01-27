@@ -53,10 +53,10 @@ func (d *deep) Copy(dst reflect.Value, src reflect.Value) {
 			return
 		}
 		srcTyp := src.Type()
+		dst.Set(src)
 		if _, ok := d.ignoreTypes[srcTyp]; ok {
 			return
 		}
-		dst.Set(src)
 		num := src.NumField()
 		for idx := 0; idx < num; idx++ {
 			if srcTyp.Field(idx).IsExported() {
