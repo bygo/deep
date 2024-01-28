@@ -11,7 +11,7 @@ var usersCopy = deep.Copy(users)
 
 ## CopyIgnore
 
-Some structures will be ignored
+Some structs will not be deconstructed and their fields copied, but the struct will be copied.
 
 ```go
 import "github.com/bygo/deep"
